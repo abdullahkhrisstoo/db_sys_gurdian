@@ -236,72 +236,6 @@ Insert into USER_STATES (STATE_ID,STATUS_NAME,CREATED_AT,UPDATED_AT) values (3,'
   CREATE UNIQUE INDEX "SYS_C0012645" ON "COMPLEMENT" ("COMPLEMENT_ID") 
   ;
 --------------------------------------------------------
---  DDL for Index SYS_C0012645
---------------------------------------------------------
-
-  CREATE UNIQUE INDEX "SYS_C0012645" ON "COMPLEMENT" ("COMPLEMENT_ID") 
-  ;
---------------------------------------------------------
---  DDL for Index SYS_C0012633
---------------------------------------------------------
-
-  CREATE UNIQUE INDEX "SYS_C0012633" ON "EXAM_PROVIDER" ("EXAM_PROVIDER_ID") 
-  ;
---------------------------------------------------------
---  DDL for Index SYS_C0012642
---------------------------------------------------------
-
-  CREATE UNIQUE INDEX "SYS_C0012642" ON "EXAM_RESERVATION" ("EXAM_RESERVATION_ID") 
-  ;
---------------------------------------------------------
---  DDL for Index SYS_C0012630
---------------------------------------------------------
-
-  CREATE UNIQUE INDEX "SYS_C0012630" ON "PLAN" ("PLAN_ID") 
-  ;
---------------------------------------------------------
---  DDL for Index SYS_C0012628
---------------------------------------------------------
-
-  CREATE UNIQUE INDEX "SYS_C0012628" ON "PLAN_FEATURE" ("PLAN_FEATURE_ID") 
-  ;
---------------------------------------------------------
---  DDL for Index SYS_C0012621
---------------------------------------------------------
-
-  CREATE UNIQUE INDEX "SYS_C0012621" ON "USER_CREDENTIAL" ("EMAIL") 
-  ;
---------------------------------------------------------
---  DDL for Index SYS_C0012622
---------------------------------------------------------
-
-  CREATE UNIQUE INDEX "SYS_C0012622" ON "USER_CREDENTIAL" ("PHONENUM") 
-  ;
---------------------------------------------------------
---  DDL for Index SYS_C0012620
---------------------------------------------------------
-
-  CREATE UNIQUE INDEX "SYS_C0012620" ON "USER_CREDENTIAL" ("CREDENTIAL_ID") 
-  ;
---------------------------------------------------------
---  DDL for Index SYS_C0012636
---------------------------------------------------------
-
-  CREATE UNIQUE INDEX "SYS_C0012636" ON "USER_INFO" ("USER_ID") 
-  ;
---------------------------------------------------------
---  DDL for Index SYS_C0012624
---------------------------------------------------------
-
-  CREATE UNIQUE INDEX "SYS_C0012624" ON "USER_ROLE" ("ROLE_ID") 
-  ;
---------------------------------------------------------
---  DDL for Index SYS_C0012626
---------------------------------------------------------
-
-  CREATE UNIQUE INDEX "SYS_C0012626" ON "USER_STATES" ("STATE_ID") 
-  ;
---------------------------------------------------------
 --  DDL for Package AUTH_PACKAGE
 --------------------------------------------------------
 
@@ -1152,13 +1086,6 @@ END plan_package;
 
 /
 --------------------------------------------------------
---  Constraints for Table COMPLEMENT
---------------------------------------------------------
-
-  ALTER TABLE "COMPLEMENT" MODIFY ("COMPLEMENT_ID" NOT NULL ENABLE);
-  ALTER TABLE "COMPLEMENT" ADD PRIMARY KEY ("COMPLEMENT_ID")
-  USING INDEX  ENABLE;
---------------------------------------------------------
 --  Constraints for Table EXAM_PROVIDER
 --------------------------------------------------------
 
@@ -1166,25 +1093,11 @@ END plan_package;
   ALTER TABLE "EXAM_PROVIDER" ADD PRIMARY KEY ("EXAM_PROVIDER_ID")
   USING INDEX  ENABLE;
 --------------------------------------------------------
---  Constraints for Table EXAM_RESERVATION
+--  Constraints for Table USER_INFO
 --------------------------------------------------------
 
-  ALTER TABLE "EXAM_RESERVATION" MODIFY ("EXAM_RESERVATION_ID" NOT NULL ENABLE);
-  ALTER TABLE "EXAM_RESERVATION" ADD PRIMARY KEY ("EXAM_RESERVATION_ID")
-  USING INDEX  ENABLE;
---------------------------------------------------------
---  Constraints for Table PLAN
---------------------------------------------------------
-
-  ALTER TABLE "PLAN" MODIFY ("PLAN_ID" NOT NULL ENABLE);
-  ALTER TABLE "PLAN" ADD PRIMARY KEY ("PLAN_ID")
-  USING INDEX  ENABLE;
---------------------------------------------------------
---  Constraints for Table PLAN_FEATURE
---------------------------------------------------------
-
-  ALTER TABLE "PLAN_FEATURE" MODIFY ("PLAN_FEATURE_ID" NOT NULL ENABLE);
-  ALTER TABLE "PLAN_FEATURE" ADD PRIMARY KEY ("PLAN_FEATURE_ID")
+  ALTER TABLE "USER_INFO" MODIFY ("USER_ID" NOT NULL ENABLE);
+  ALTER TABLE "USER_INFO" ADD PRIMARY KEY ("USER_ID")
   USING INDEX  ENABLE;
 --------------------------------------------------------
 --  Constraints for Table USER_CREDENTIAL
@@ -1198,11 +1111,11 @@ END plan_package;
   ALTER TABLE "USER_CREDENTIAL" ADD UNIQUE ("PHONENUM")
   USING INDEX  ENABLE;
 --------------------------------------------------------
---  Constraints for Table USER_INFO
+--  Constraints for Table EXAM_RESERVATION
 --------------------------------------------------------
 
-  ALTER TABLE "USER_INFO" MODIFY ("USER_ID" NOT NULL ENABLE);
-  ALTER TABLE "USER_INFO" ADD PRIMARY KEY ("USER_ID")
+  ALTER TABLE "EXAM_RESERVATION" MODIFY ("EXAM_RESERVATION_ID" NOT NULL ENABLE);
+  ALTER TABLE "EXAM_RESERVATION" ADD PRIMARY KEY ("EXAM_RESERVATION_ID")
   USING INDEX  ENABLE;
 --------------------------------------------------------
 --  Constraints for Table USER_ROLE
@@ -1212,11 +1125,32 @@ END plan_package;
   ALTER TABLE "USER_ROLE" ADD PRIMARY KEY ("ROLE_ID")
   USING INDEX  ENABLE;
 --------------------------------------------------------
+--  Constraints for Table PLAN_FEATURE
+--------------------------------------------------------
+
+  ALTER TABLE "PLAN_FEATURE" MODIFY ("PLAN_FEATURE_ID" NOT NULL ENABLE);
+  ALTER TABLE "PLAN_FEATURE" ADD PRIMARY KEY ("PLAN_FEATURE_ID")
+  USING INDEX  ENABLE;
+--------------------------------------------------------
 --  Constraints for Table USER_STATES
 --------------------------------------------------------
 
   ALTER TABLE "USER_STATES" MODIFY ("STATE_ID" NOT NULL ENABLE);
   ALTER TABLE "USER_STATES" ADD PRIMARY KEY ("STATE_ID")
+  USING INDEX  ENABLE;
+--------------------------------------------------------
+--  Constraints for Table COMPLEMENT
+--------------------------------------------------------
+
+  ALTER TABLE "COMPLEMENT" MODIFY ("COMPLEMENT_ID" NOT NULL ENABLE);
+  ALTER TABLE "COMPLEMENT" ADD PRIMARY KEY ("COMPLEMENT_ID")
+  USING INDEX  ENABLE;
+--------------------------------------------------------
+--  Constraints for Table PLAN
+--------------------------------------------------------
+
+  ALTER TABLE "PLAN" MODIFY ("PLAN_ID" NOT NULL ENABLE);
+  ALTER TABLE "PLAN" ADD PRIMARY KEY ("PLAN_ID")
   USING INDEX  ENABLE;
 --------------------------------------------------------
 --  Ref Constraints for Table COMPLEMENT
