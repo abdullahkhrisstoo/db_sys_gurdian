@@ -1253,7 +1253,7 @@ END;
 --------------------------------------------------------
 
   ALTER TABLE "USER_CREDENTIAL" MODIFY ("CREDENTIAL_ID" NOT NULL ENABLE);
-  ALTER TABLE "USER_CREDENTIAL" ADD PRIMARY KEY ("CREDENTIAL_ID")
+  ALTER TABLE "USER_CREDENTIAL" ADD CONSTRAINT "PK_USER_CREDENTIAL" PRIMARY KEY ("CREDENTIAL_ID")
   USING INDEX  ENABLE;
   ALTER TABLE "USER_CREDENTIAL" ADD UNIQUE ("EMAIL")
   USING INDEX  ENABLE;
@@ -1264,70 +1264,70 @@ END;
 --------------------------------------------------------
 
   ALTER TABLE "COMPLEMENT" MODIFY ("COMPLEMENT_ID" NOT NULL ENABLE);
-  ALTER TABLE "COMPLEMENT" ADD PRIMARY KEY ("COMPLEMENT_ID")
+  ALTER TABLE "COMPLEMENT" ADD CONSTRAINT "PK_COMPLEMENT_ID" PRIMARY KEY ("COMPLEMENT_ID")
   USING INDEX  ENABLE;
 --------------------------------------------------------
 --  Constraints for Table TERMS_AND_CONDITIONS
 --------------------------------------------------------
 
   ALTER TABLE "TERMS_AND_CONDITIONS" MODIFY ("TERMS_ID" NOT NULL ENABLE);
-  ALTER TABLE "TERMS_AND_CONDITIONS" ADD PRIMARY KEY ("TERMS_ID")
+  ALTER TABLE "TERMS_AND_CONDITIONS" ADD CONSTRAINT "PK_TERMS_ID" PRIMARY KEY ("TERMS_ID")
   USING INDEX  ENABLE;
 --------------------------------------------------------
 --  Constraints for Table USER_STATES
 --------------------------------------------------------
 
   ALTER TABLE "USER_STATES" MODIFY ("STATE_ID" NOT NULL ENABLE);
-  ALTER TABLE "USER_STATES" ADD PRIMARY KEY ("STATE_ID")
+  ALTER TABLE "USER_STATES" ADD CONSTRAINT "PK_STATE_ID" PRIMARY KEY ("STATE_ID")
   USING INDEX  ENABLE;
 --------------------------------------------------------
 --  Constraints for Table EXAM_PROVIDER
 --------------------------------------------------------
 
   ALTER TABLE "EXAM_PROVIDER" MODIFY ("EXAM_PROVIDER_ID" NOT NULL ENABLE);
-  ALTER TABLE "EXAM_PROVIDER" ADD PRIMARY KEY ("EXAM_PROVIDER_ID")
+  ALTER TABLE "EXAM_PROVIDER" ADD CONSTRAINT "PK_EXAM_PROVIDER_ID" PRIMARY KEY ("EXAM_PROVIDER_ID")
   USING INDEX  ENABLE;
 --------------------------------------------------------
 --  Constraints for Table EXAM_RESERVATION
 --------------------------------------------------------
 
   ALTER TABLE "EXAM_RESERVATION" MODIFY ("EXAM_RESERVATION_ID" NOT NULL ENABLE);
-  ALTER TABLE "EXAM_RESERVATION" ADD PRIMARY KEY ("EXAM_RESERVATION_ID")
+  ALTER TABLE "EXAM_RESERVATION" ADD CONSTRAINT "PK_EXAM_RESERVATION_ID" PRIMARY KEY ("EXAM_RESERVATION_ID")
   USING INDEX  ENABLE;
 --------------------------------------------------------
 --  Constraints for Table PLAN
 --------------------------------------------------------
 
   ALTER TABLE "PLAN" MODIFY ("PLAN_ID" NOT NULL ENABLE);
-  ALTER TABLE "PLAN" ADD PRIMARY KEY ("PLAN_ID")
+  ALTER TABLE "PLAN" ADD CONSTRAINT "PK_PLAN_ID" PRIMARY KEY ("PLAN_ID")
   USING INDEX  ENABLE;
 --------------------------------------------------------
 --  Constraints for Table PLAN_FEATURE
 --------------------------------------------------------
 
   ALTER TABLE "PLAN_FEATURE" MODIFY ("PLAN_FEATURE_ID" NOT NULL ENABLE);
-  ALTER TABLE "PLAN_FEATURE" ADD PRIMARY KEY ("PLAN_FEATURE_ID")
+  ALTER TABLE "PLAN_FEATURE" ADD CONSTRAINT "PK_PLAN_FEATURE_ID" PRIMARY KEY ("PLAN_FEATURE_ID")
   USING INDEX  ENABLE;
 --------------------------------------------------------
 --  Constraints for Table USER_INFO
 --------------------------------------------------------
 
   ALTER TABLE "USER_INFO" MODIFY ("USER_ID" NOT NULL ENABLE);
-  ALTER TABLE "USER_INFO" ADD PRIMARY KEY ("USER_ID")
+  ALTER TABLE "USER_INFO" ADD CONSTRAINT "PK_USER_ID" PRIMARY KEY ("USER_ID")
   USING INDEX  ENABLE;
 --------------------------------------------------------
 --  Constraints for Table USER_ROLE
 --------------------------------------------------------
 
   ALTER TABLE "USER_ROLE" MODIFY ("ROLE_ID" NOT NULL ENABLE);
-  ALTER TABLE "USER_ROLE" ADD PRIMARY KEY ("ROLE_ID")
+  ALTER TABLE "USER_ROLE" ADD CONSTRAINT "PK_ROLE_ID" PRIMARY KEY ("ROLE_ID")
   USING INDEX  ENABLE;
 --------------------------------------------------------
 --  Constraints for Table CONTACT_US
 --------------------------------------------------------
 
   ALTER TABLE "CONTACT_US" MODIFY ("CONTACT_ID" NOT NULL ENABLE);
-  ALTER TABLE "CONTACT_US" ADD PRIMARY KEY ("CONTACT_ID")
+  ALTER TABLE "CONTACT_US" ADD CONSTRAINT "PK_CONTACT_ID" PRIMARY KEY ("CONTACT_ID")
   USING INDEX  ENABLE;
 --------------------------------------------------------
 --  Ref Constraints for Table COMPLEMENT
