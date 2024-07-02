@@ -1,5 +1,5 @@
 --------------------------------------------------------
---  File created - Saturday-June-29-2024   
+--  File created - Tuesday-July-02-2024   
 --------------------------------------------------------
 --------------------------------------------------------
 --  DDL for Table COMPLEMENT
@@ -143,26 +143,15 @@
    ) ;
 REM INSERTING into COMPLEMENT
 SET DEFINE OFF;
-Insert into COMPLEMENT (COMPLEMENT_ID,PROCTOR_DESC,STUDENT_DESC,EXAM_RESERVATION_ID,CREATED_AT,UPDATED_AT) values (1,null,null,null,to_timestamp('20-JUN-24 06.31.08.560000000 PM','DD-MON-RR HH.MI.SSXFF AM'),to_timestamp('20-JUN-24 06.31.08.560000000 PM','DD-MON-RR HH.MI.SSXFF AM'));
-Insert into COMPLEMENT (COMPLEMENT_ID,PROCTOR_DESC,STUDENT_DESC,EXAM_RESERVATION_ID,CREATED_AT,UPDATED_AT) values (2,null,null,null,to_timestamp('20-JUN-24 06.31.08.567000000 PM','DD-MON-RR HH.MI.SSXFF AM'),to_timestamp('20-JUN-24 06.31.08.567000000 PM','DD-MON-RR HH.MI.SSXFF AM'));
-Insert into COMPLEMENT (COMPLEMENT_ID,PROCTOR_DESC,STUDENT_DESC,EXAM_RESERVATION_ID,CREATED_AT,UPDATED_AT) values (3,null,null,null,to_timestamp('20-JUN-24 06.31.08.569000000 PM','DD-MON-RR HH.MI.SSXFF AM'),to_timestamp('20-JUN-24 06.31.08.569000000 PM','DD-MON-RR HH.MI.SSXFF AM'));
-Insert into COMPLEMENT (COMPLEMENT_ID,PROCTOR_DESC,STUDENT_DESC,EXAM_RESERVATION_ID,CREATED_AT,UPDATED_AT) values (4,null,null,null,to_timestamp('20-JUN-24 06.31.08.570000000 PM','DD-MON-RR HH.MI.SSXFF AM'),to_timestamp('20-JUN-24 06.31.08.570000000 PM','DD-MON-RR HH.MI.SSXFF AM'));
-Insert into COMPLEMENT (COMPLEMENT_ID,PROCTOR_DESC,STUDENT_DESC,EXAM_RESERVATION_ID,CREATED_AT,UPDATED_AT) values (5,null,null,null,to_timestamp('20-JUN-24 06.31.08.573000000 PM','DD-MON-RR HH.MI.SSXFF AM'),to_timestamp('20-JUN-24 06.31.08.573000000 PM','DD-MON-RR HH.MI.SSXFF AM'));
-Insert into COMPLEMENT (COMPLEMENT_ID,PROCTOR_DESC,STUDENT_DESC,EXAM_RESERVATION_ID,CREATED_AT,UPDATED_AT) values (6,null,null,null,to_timestamp('20-JUN-24 06.31.08.576000000 PM','DD-MON-RR HH.MI.SSXFF AM'),to_timestamp('20-JUN-24 06.31.08.576000000 PM','DD-MON-RR HH.MI.SSXFF AM'));
+Insert into COMPLEMENT (COMPLEMENT_ID,PROCTOR_DESC,STUDENT_DESC,EXAM_RESERVATION_ID,CREATED_AT,UPDATED_AT) values (23,null,null,32,to_timestamp('01-JUL-24 06.05.50.019000000 PM','DD-MON-RR HH.MI.SSXFF AM'),to_timestamp('01-JUL-24 06.05.50.019000000 PM','DD-MON-RR HH.MI.SSXFF AM'));
+Insert into COMPLEMENT (COMPLEMENT_ID,PROCTOR_DESC,STUDENT_DESC,EXAM_RESERVATION_ID,CREATED_AT,UPDATED_AT) values (22,null,null,32,to_timestamp('01-JUL-24 06.04.23.526000000 PM','DD-MON-RR HH.MI.SSXFF AM'),to_timestamp('01-JUL-24 06.04.23.526000000 PM','DD-MON-RR HH.MI.SSXFF AM'));
 REM INSERTING into CONTACT_US
 SET DEFINE OFF;
 REM INSERTING into EXAM_PROVIDER
 SET DEFINE OFF;
 REM INSERTING into EXAM_RESERVATION
 SET DEFINE OFF;
-Insert into EXAM_RESERVATION (EXAM_RESERVATION_ID,STUDENT_TOKEN_EMAIL,PROCTOR_TOKEN_EMAIL,UNIQUE_KEY,USER_ID,CREATED_AT,UPDATED_AT,START_DATE,END_DATE,STUDENT_NAME,PHONE,SCORE,EMAIL,EXAM_PROVIDER_ID) values (1,null,null,null,null,to_timestamp('28-JUN-24 05.33.17.851000000 PM','DD-MON-RR HH.MI.SSXFF AM'),to_timestamp('28-JUN-24 07.26.02.807000000 PM','DD-MON-RR HH.MI.SSXFF AM'),null,null,null,null,null,null,null);
-Insert into EXAM_RESERVATION (EXAM_RESERVATION_ID,STUDENT_TOKEN_EMAIL,PROCTOR_TOKEN_EMAIL,UNIQUE_KEY,USER_ID,CREATED_AT,UPDATED_AT,START_DATE,END_DATE,STUDENT_NAME,PHONE,SCORE,EMAIL,EXAM_PROVIDER_ID) values (90,'student3@example.com','proctor4@example.com','key3',4,to_timestamp('25-JUN-24 09.55.58.853000000 AM','DD-MON-RR HH.MI.SSXFF AM'),to_timestamp('28-JUN-24 07.26.02.807000000 PM','DD-MON-RR HH.MI.SSXFF AM'),to_timestamp('26-JUN-24 09.51.00.000000000 AM','DD-MON-RR HH.MI.SSXFF AM'),to_timestamp('26-JUN-24 10.00.00.000000000 AM','DD-MON-RR HH.MI.SSXFF AM'),null,null,null,null,null);
-Insert into EXAM_RESERVATION (EXAM_RESERVATION_ID,STUDENT_TOKEN_EMAIL,PROCTOR_TOKEN_EMAIL,UNIQUE_KEY,USER_ID,CREATED_AT,UPDATED_AT,START_DATE,END_DATE,STUDENT_NAME,PHONE,SCORE,EMAIL,EXAM_PROVIDER_ID) values (88,'student3@example.com','proctor4@example.com','key3',3,to_timestamp('25-JUN-24 09.55.57.174000000 AM','DD-MON-RR HH.MI.SSXFF AM'),to_timestamp('28-JUN-24 07.26.02.807000000 PM','DD-MON-RR HH.MI.SSXFF AM'),to_timestamp('26-JUN-24 09.20.00.000000000 AM','DD-MON-RR HH.MI.SSXFF AM'),to_timestamp('26-JUN-24 10.00.00.000000000 AM','DD-MON-RR HH.MI.SSXFF AM'),null,null,null,null,null);
-Insert into EXAM_RESERVATION (EXAM_RESERVATION_ID,STUDENT_TOKEN_EMAIL,PROCTOR_TOKEN_EMAIL,UNIQUE_KEY,USER_ID,CREATED_AT,UPDATED_AT,START_DATE,END_DATE,STUDENT_NAME,PHONE,SCORE,EMAIL,EXAM_PROVIDER_ID) values (103,'student3@example.com','proctor4@example.com','key3',4,to_timestamp('25-JUN-24 08.29.50.319000000 PM','DD-MON-RR HH.MI.SSXFF AM'),to_timestamp('28-JUN-24 07.26.02.807000000 PM','DD-MON-RR HH.MI.SSXFF AM'),to_timestamp('28-JUN-24 02.00.00.000000000 PM','DD-MON-RR HH.MI.SSXFF AM'),to_timestamp('28-JUN-24 03.00.00.000000000 PM','DD-MON-RR HH.MI.SSXFF AM'),null,null,null,null,null);
-Insert into EXAM_RESERVATION (EXAM_RESERVATION_ID,STUDENT_TOKEN_EMAIL,PROCTOR_TOKEN_EMAIL,UNIQUE_KEY,USER_ID,CREATED_AT,UPDATED_AT,START_DATE,END_DATE,STUDENT_NAME,PHONE,SCORE,EMAIL,EXAM_PROVIDER_ID) values (100,'student2@example.com','proctor3@example.com','key2',3,to_timestamp('25-JUN-24 08.29.46.829000000 PM','DD-MON-RR HH.MI.SSXFF AM'),to_timestamp('28-JUN-24 07.26.02.807000000 PM','DD-MON-RR HH.MI.SSXFF AM'),to_timestamp('28-JUN-24 02.00.00.000000000 PM','DD-MON-RR HH.MI.SSXFF AM'),to_timestamp('28-JUN-24 03.00.00.000000000 PM','DD-MON-RR HH.MI.SSXFF AM'),null,null,null,null,null);
-Insert into EXAM_RESERVATION (EXAM_RESERVATION_ID,STUDENT_TOKEN_EMAIL,PROCTOR_TOKEN_EMAIL,UNIQUE_KEY,USER_ID,CREATED_AT,UPDATED_AT,START_DATE,END_DATE,STUDENT_NAME,PHONE,SCORE,EMAIL,EXAM_PROVIDER_ID) values (121,'student2@example.com','proctor3@example.com','key2',3,to_timestamp('26-JUN-24 10.09.46.963000000 AM','DD-MON-RR HH.MI.SSXFF AM'),to_timestamp('28-JUN-24 07.26.02.807000000 PM','DD-MON-RR HH.MI.SSXFF AM'),to_timestamp('28-JUN-24 11.00.00.000000000 AM','DD-MON-RR HH.MI.SSXFF AM'),to_timestamp('28-JUN-24 12.00.00.000000000 PM','DD-MON-RR HH.MI.SSXFF AM'),null,null,null,null,null);
-Insert into EXAM_RESERVATION (EXAM_RESERVATION_ID,STUDENT_TOKEN_EMAIL,PROCTOR_TOKEN_EMAIL,UNIQUE_KEY,USER_ID,CREATED_AT,UPDATED_AT,START_DATE,END_DATE,STUDENT_NAME,PHONE,SCORE,EMAIL,EXAM_PROVIDER_ID) values (122,'student2@example.com','proctor3@example.com','key2',3,to_timestamp('26-JUN-24 10.09.53.964000000 AM','DD-MON-RR HH.MI.SSXFF AM'),to_timestamp('28-JUN-24 07.26.02.807000000 PM','DD-MON-RR HH.MI.SSXFF AM'),to_timestamp('28-JUN-24 11.00.00.000000000 AM','DD-MON-RR HH.MI.SSXFF AM'),to_timestamp('28-JUN-24 12.00.00.000000000 PM','DD-MON-RR HH.MI.SSXFF AM'),null,null,null,null,null);
-Insert into EXAM_RESERVATION (EXAM_RESERVATION_ID,STUDENT_TOKEN_EMAIL,PROCTOR_TOKEN_EMAIL,UNIQUE_KEY,USER_ID,CREATED_AT,UPDATED_AT,START_DATE,END_DATE,STUDENT_NAME,PHONE,SCORE,EMAIL,EXAM_PROVIDER_ID) values (106,'student3@example.com','proctor4@example.com','key3',4,to_timestamp('25-JUN-24 10.45.33.344000000 PM','DD-MON-RR HH.MI.SSXFF AM'),to_timestamp('28-JUN-24 07.26.02.807000000 PM','DD-MON-RR HH.MI.SSXFF AM'),to_timestamp('28-JUN-24 02.05.00.000000000 PM','DD-MON-RR HH.MI.SSXFF AM'),to_timestamp('28-JUN-24 03.45.00.000000000 PM','DD-MON-RR HH.MI.SSXFF AM'),null,null,null,null,null);
+Insert into EXAM_RESERVATION (EXAM_RESERVATION_ID,STUDENT_TOKEN_EMAIL,PROCTOR_TOKEN_EMAIL,UNIQUE_KEY,USER_ID,CREATED_AT,UPDATED_AT,START_DATE,END_DATE,STUDENT_NAME,PHONE,SCORE,EMAIL,EXAM_PROVIDER_ID) values (32,null,null,null,null,to_timestamp('01-JUL-24 05.56.36.461000000 PM','DD-MON-RR HH.MI.SSXFF AM'),to_timestamp('01-JUL-24 05.56.36.461000000 PM','DD-MON-RR HH.MI.SSXFF AM'),null,null,null,null,null,null,null);
 REM INSERTING into PLAN
 SET DEFINE OFF;
 Insert into PLAN (PLAN_ID,PLAN_NAME,PLAN_DESCRIPTION,PLAN_PRICE,CREATED_AT,UPDATED_AT) values (2,'asd','asdr',236,to_timestamp('22-JUN-24 03.04.51.332000000 AM','DD-MON-RR HH.MI.SSXFF AM'),to_timestamp('22-JUN-24 03.04.51.332000000 AM','DD-MON-RR HH.MI.SSXFF AM'));
@@ -186,12 +175,12 @@ Insert into USER_CREDENTIAL (CREDENTIAL_ID,EMAIL,PHONENUM,PASSWORD,CREATED_AT,UP
 Insert into USER_CREDENTIAL (CREDENTIAL_ID,EMAIL,PHONENUM,PASSWORD,CREATED_AT,UPDATED_AT) values (61,'string','string','123456',to_timestamp('19-JUN-24 06.06.05.816000000 PM','DD-MON-RR HH.MI.SSXFF AM'),to_timestamp('19-JUN-24 06.06.05.816000000 PM','DD-MON-RR HH.MI.SSXFF AM'));
 Insert into USER_CREDENTIAL (CREDENTIAL_ID,EMAIL,PHONENUM,PASSWORD,CREATED_AT,UPDATED_AT) values (41,'abd.abdullah2000@gmail.com','+962775327106','123456',to_timestamp('18-JUN-24 03.05.57.374000000 AM','DD-MON-RR HH.MI.SSXFF AM'),to_timestamp('18-JUN-24 03.05.57.374000000 AM','DD-MON-RR HH.MI.SSXFF AM'));
 Insert into USER_CREDENTIAL (CREDENTIAL_ID,EMAIL,PHONENUM,PASSWORD,CREATED_AT,UPDATED_AT) values (21,'abd@gmail.com','+00','123456',to_timestamp('25-JUN-24 07.51.33.275000000 PM','DD-MON-RR HH.MI.SSXFF AM'),to_timestamp('25-JUN-24 07.51.33.275000000 PM','DD-MON-RR HH.MI.SSXFF AM'));
-Insert into USER_CREDENTIAL (CREDENTIAL_ID,EMAIL,PHONENUM,PASSWORD,CREATED_AT,UPDATED_AT) values (2,'farhatalaa388@gmail.com',null,'123456',to_timestamp('27-JUN-24 07.48.30.690000000 PM','DD-MON-RR HH.MI.SSXFF AM'),to_timestamp('27-JUN-24 07.48.30.690000000 PM','DD-MON-RR HH.MI.SSXFF AM'));
+Insert into USER_CREDENTIAL (CREDENTIAL_ID,EMAIL,PHONENUM,PASSWORD,CREATED_AT,UPDATED_AT) values (2,'abdullah@gmail.com','56789','8D969EEF6ECAD3C29A3A629280E686CF0C3F5D5A86AFF3CA12020C923ADC6C92',to_timestamp('30-JUN-24 07.37.56.285000000 PM','DD-MON-RR HH.MI.SSXFF AM'),to_timestamp('30-JUN-24 07.37.56.285000000 PM','DD-MON-RR HH.MI.SSXFF AM'));
 REM INSERTING into USER_INFO
 SET DEFINE OFF;
 Insert into USER_INFO (USER_ID,FIRST_NAME,LAST_NAME,GENDER,CREDENTIAL_ID,ROLE_ID,STATE_ID,CREATED_AT,UPDATED_AT) values (3,'PROCTOR_2','Doe2','Male',3,3,2,to_timestamp('17-JUN-24 07.15.35.078000000 PM','DD-MON-RR HH.MI.SSXFF AM'),to_timestamp('17-JUN-24 07.15.35.078000000 PM','DD-MON-RR HH.MI.SSXFF AM'));
 Insert into USER_INFO (USER_ID,FIRST_NAME,LAST_NAME,GENDER,CREDENTIAL_ID,ROLE_ID,STATE_ID,CREATED_AT,UPDATED_AT) values (4,'PROCTOR_3','Doe3','Female',4,3,2,to_timestamp('17-JUN-24 07.15.35.079000000 PM','DD-MON-RR HH.MI.SSXFF AM'),to_timestamp('17-JUN-24 07.15.35.079000000 PM','DD-MON-RR HH.MI.SSXFF AM'));
-Insert into USER_INFO (USER_ID,FIRST_NAME,LAST_NAME,GENDER,CREDENTIAL_ID,ROLE_ID,STATE_ID,CREATED_AT,UPDATED_AT) values (200,'Alaa','Farhat',null,2,2,1,to_timestamp('27-JUN-24 07.48.30.694000000 PM','DD-MON-RR HH.MI.SSXFF AM'),to_timestamp('27-JUN-24 07.48.30.694000000 PM','DD-MON-RR HH.MI.SSXFF AM'));
+Insert into USER_INFO (USER_ID,FIRST_NAME,LAST_NAME,GENDER,CREDENTIAL_ID,ROLE_ID,STATE_ID,CREATED_AT,UPDATED_AT) values (200,'Abdullah','Abdullah',null,2,2,1,to_timestamp('30-JUN-24 07.37.56.299000000 PM','DD-MON-RR HH.MI.SSXFF AM'),to_timestamp('30-JUN-24 07.37.56.299000000 PM','DD-MON-RR HH.MI.SSXFF AM'));
 REM INSERTING into USER_ROLE
 SET DEFINE OFF;
 Insert into USER_ROLE (ROLE_ID,ROLE_NAME,CREATED_AT,UPDATED_AT) values (2,'EXAM PROVIDER',to_timestamp('17-JUN-24 05.55.00.887000000 PM','DD-MON-RR HH.MI.SSXFF AM'),to_timestamp('17-JUN-24 05.55.00.887000000 PM','DD-MON-RR HH.MI.SSXFF AM'));
@@ -407,7 +396,9 @@ END update_user_password;
 
 -- TODO: delete_user
 	procedure delete_user (
-		v_user_id in user_info.user_id%type
+		v_user_id in user_info.user_id%type,
+        v_is_deleted out number
+
 	);
     -- todo: get_user_by_id
 	procedure get_user_by_id (
@@ -421,7 +412,9 @@ END update_user_password;
 		v_user_credential_id in user_credential.credential_id%type,
 		v_last_password      in user_credential.password%type,
 		v_new_password       in user_credential.password%type,
-		v_confirm_password   in user_credential.password%type
+		v_confirm_password   in user_credential.password%type,
+        v_is_updated out number
+
 );
 
 -- TODO: user login
@@ -441,7 +434,9 @@ END update_user_password;
 		v_user_id in user_info.user_id%TYPE,
 		v_first_name in user_info.first_name%type,
 		v_last_name  in user_info.last_name%type,
-		v_password   in user_credential.password%type
+		v_password   in user_credential.password%type,
+        v_is_updated out number
+
 );
 
 
@@ -449,14 +444,18 @@ END update_user_password;
     procedure update_email(   
         v_user_id    in user_info.user_id%TYPE,
         v_email  in user_credential.email%TYPE,
-        v_password   in user_credential.password%TYPE
+        v_password   in user_credential.password%TYPE,
+        v_is_updated out number
+
     );
 
 -- todo: update mobile
 procedure update_phone(   
         v_user_id    in user_info.user_id%TYPE,
         v_phonenum  in user_credential.phonenum%TYPE,
-        v_password   in user_credential.password%TYPE
+        v_password   in user_credential.password%TYPE,
+        v_is_updated out number
+
     );
 
 -- todo: Check Emil
@@ -473,11 +472,18 @@ end AUTH_PACKAGE;
 --------------------------------------------------------
 
   CREATE OR REPLACE EDITIONABLE PACKAGE "COMPLEMENT_PACKAGE" AS
-    PROCEDURE create_complement(proctor_desc COMPLEMENT.PROCTOR_DESC%TYPE, student_desc COMPLEMENT.STUDENT_DESC%TYPE, exam_reservation_id COMPLEMENT.EXAM_RESERVATION_ID%TYPE);
-    PROCEDURE get_complement_by_id(complement_id COMPLEMENT.COMPLEMENT_ID%TYPE);
+    PROCEDURE create_complement(
+        v_proctor_desc COMPLEMENT.PROCTOR_DESC%TYPE,
+         v_student_desc COMPLEMENT.STUDENT_DESC%TYPE,
+          v_exam_reservation_id COMPLEMENT.EXAM_RESERVATION_ID%TYPE);
+    PROCEDURE get_complement_by_id(v_complement_id COMPLEMENT.COMPLEMENT_ID%TYPE);
     PROCEDURE get_all_complements;
-    PROCEDURE update_complement(complement_id COMPLEMENT.COMPLEMENT_ID%TYPE, proctor_desc COMPLEMENT.PROCTOR_DESC%TYPE, student_desc COMPLEMENT.STUDENT_DESC%TYPE, exam_reservation_id COMPLEMENT.EXAM_RESERVATION_ID%TYPE);
-    PROCEDURE delete_complement(complement_id COMPLEMENT.COMPLEMENT_ID%TYPE);
+    PROCEDURE update_complement(
+        v_complement_id COMPLEMENT.COMPLEMENT_ID%TYPE, 
+        v_proctor_desc COMPLEMENT.PROCTOR_DESC%TYPE, 
+        v_student_desc COMPLEMENT.STUDENT_DESC%TYPE, 
+        v_exam_reservation_id COMPLEMENT.EXAM_RESERVATION_ID%TYPE);
+    PROCEDURE delete_complement(v_complement_id COMPLEMENT.COMPLEMENT_ID%TYPE);
 END complement_package;
 
 /
@@ -616,22 +622,24 @@ END create_user;
 -- TODO: delete_user
 
 	procedure delete_user (
-		v_user_id in user_info.user_id%type
+		v_user_id in user_info.user_id%type,
+        v_is_deleted out number
+
 	) is
 		v_credential_id user_credential.credential_id%type;
 	begin
 		select credential_id
-		  into v_credential_id
-		  from user_info
-		 where user_id = v_user_id;
+		into v_credential_id
+		from user_info
+		where user_id = v_user_id;
 
 		delete from user_info
-		 where user_id = v_user_id;
+		where user_id = v_user_id;
 
 		delete from user_credential
-		 where credential_id = v_credential_id;
-
-		commit;
+		where credential_id = v_credential_id
+        RETURNING credential_id INTO v_is_deleted;
+        commit;
 	end delete_user;
 -- todo: end delete user
 
@@ -661,11 +669,13 @@ END create_user;
 
 
 -- TODO: update user password
-	PROCEDURE update_user_password (
-    v_user_credential_id IN user_credential.credential_id%type,
- 	v_last_password      in user_credential.password%type,
+	procedure update_user_password (
+		v_user_credential_id in user_credential.credential_id%type,
+		v_last_password      in user_credential.password%type,
 		v_new_password       in user_credential.password%type,
-		v_confirm_password   in user_credential.password%type
+		v_confirm_password   in user_credential.password%type,
+        v_is_updated out number
+
 ) IS
     v_current_password user_credential.password%type;
     v_hashed_new_password RAW(32);
@@ -701,7 +711,8 @@ BEGIN
     UPDATE user_credential
        SET password = v_hashed_new_password,
            updated_at = CURRENT_TIMESTAMP
-     WHERE credential_id = v_user_credential_id;
+     WHERE credential_id = v_user_credential_id
+     RETURNING credential_id INTO v_is_updated;
 
     COMMIT;
 EXCEPTION
@@ -795,11 +806,13 @@ END user_login;
 
 
 -- todo: update name
-PROCEDURE update_name (
-    v_user_id    IN user_info.user_id%type,
-    v_first_name IN user_info.first_name%type,
-    v_last_name  IN user_info.last_name%type,
-    v_password   IN user_credential.password%type
+	PROCEDURE update_name(	
+		v_user_id in user_info.user_id%TYPE,
+		v_first_name in user_info.first_name%type,
+		v_last_name  in user_info.last_name%type,
+		v_password   in user_credential.password%type,
+        v_is_updated out number
+
 ) IS
     v_credential_id    user_credential.credential_id%type;
     v_current_password user_credential.password%type;
@@ -839,11 +852,13 @@ END update_name;
 
 -- todo: update email
 
-PROCEDURE update_email (
-    v_user_id  IN user_info.user_id%type,
-    v_email    IN user_credential.email%type,
-    v_password IN user_credential.password%type
-) IS
+ procedure update_email(   
+        v_user_id    in user_info.user_id%TYPE,
+        v_email  in user_credential.email%TYPE,
+        v_password   in user_credential.password%TYPE,
+        v_is_updated out number
+
+    )IS
     v_credential_id    user_credential.credential_id%type;
     v_current_password user_credential.password%type;
 BEGIN
@@ -867,7 +882,8 @@ BEGIN
     UPDATE user_credential
        SET email = lower(v_email),
            updated_at = current_timestamp
-     WHERE credential_id = v_credential_id;
+     WHERE credential_id = v_credential_id
+      RETURNING credential_id INTO v_is_updated;
 
     COMMIT;
 EXCEPTION
@@ -882,11 +898,13 @@ END update_email;
 -- todo: end update email
 
 -- todo: ypdate mobile
-	PROCEDURE update_phone (
-    v_user_id  IN user_info.user_id%type,
-    v_phonenum IN user_credential.phonenum%type,
-    v_password IN user_credential.password%type
-) IS
+procedure update_phone(   
+        v_user_id    in user_info.user_id%TYPE,
+        v_phonenum  in user_credential.phonenum%TYPE,
+        v_password   in user_credential.password%TYPE,
+        v_is_updated out number
+
+    ) IS
     v_credential_id    user_credential.credential_id%type;
     v_current_password user_credential.password%type;
 BEGIN
@@ -909,7 +927,8 @@ BEGIN
     UPDATE user_credential
        SET phonenum = v_phonenum,
            updated_at = current_timestamp
-     WHERE credential_id = v_credential_id;
+     WHERE credential_id = v_credential_id 
+     RETURNING credential_id INTO v_is_updated;
 
     COMMIT;
 EXCEPTION
@@ -964,17 +983,20 @@ end auth_package;
 
   CREATE OR REPLACE EDITIONABLE PACKAGE BODY "COMPLEMENT_PACKAGE" AS
 
-    PROCEDURE create_complement(proctor_desc COMPLEMENT.PROCTOR_DESC%TYPE, student_desc COMPLEMENT.STUDENT_DESC%TYPE, exam_reservation_id COMPLEMENT.EXAM_RESERVATION_ID%TYPE) AS
+    PROCEDURE create_complement(
+        v_proctor_desc COMPLEMENT.PROCTOR_DESC%TYPE, 
+        v_student_desc COMPLEMENT.STUDENT_DESC%TYPE, 
+        v_exam_reservation_id COMPLEMENT.EXAM_RESERVATION_ID%TYPE) AS
     BEGIN
         INSERT INTO COMPLEMENT (PROCTOR_DESC, STUDENT_DESC, EXAM_RESERVATION_ID)
-        VALUES (proctor_desc, student_desc, exam_reservation_id);
+        VALUES (v_proctor_desc, v_student_desc, v_exam_reservation_id);
     END create_complement;
 
-    PROCEDURE get_complement_by_id(complement_id COMPLEMENT.COMPLEMENT_ID%TYPE) AS
+    PROCEDURE get_complement_by_id(v_complement_id COMPLEMENT.COMPLEMENT_ID%TYPE) AS
         c_complement SYS_REFCURSOR;
     BEGIN
         OPEN c_complement FOR
-        SELECT * FROM COMPLEMENT WHERE COMPLEMENT_ID = complement_id;
+        SELECT * FROM COMPLEMENT WHERE COMPLEMENT_ID = v_complement_id;
         DBMS_SQL.RETURN_RESULT(c_complement);
     END get_complement_by_id;
 
@@ -986,19 +1008,23 @@ end auth_package;
         DBMS_SQL.RETURN_RESULT(c_complements);
     END get_all_complements;
 
-    PROCEDURE update_complement(complement_id COMPLEMENT.COMPLEMENT_ID%TYPE, proctor_desc COMPLEMENT.PROCTOR_DESC%TYPE, student_desc COMPLEMENT.STUDENT_DESC%TYPE, exam_reservation_id COMPLEMENT.EXAM_RESERVATION_ID%TYPE) AS
+    PROCEDURE update_complement(
+        v_complement_id COMPLEMENT.COMPLEMENT_ID%TYPE, 
+        v_proctor_desc COMPLEMENT.PROCTOR_DESC%TYPE, 
+        v_student_desc COMPLEMENT.STUDENT_DESC%TYPE, 
+        v_exam_reservation_id COMPLEMENT.EXAM_RESERVATION_ID%TYPE) AS
     BEGIN
         UPDATE COMPLEMENT
-        SET PROCTOR_DESC = proctor_desc,
-            STUDENT_DESC = student_desc,
-            EXAM_RESERVATION_ID = exam_reservation_id,
+        SET PROCTOR_DESC = v_proctor_desc,
+            STUDENT_DESC = v_student_desc,
+            EXAM_RESERVATION_ID = v_exam_reservation_id,
             UPDATED_AT = CURRENT_TIMESTAMP
-        WHERE COMPLEMENT_ID = complement_id;
+        WHERE COMPLEMENT_ID = v_complement_id;
     END update_complement;
 
-    PROCEDURE delete_complement(complement_id COMPLEMENT.COMPLEMENT_ID%TYPE) AS
+    PROCEDURE delete_complement(v_complement_id COMPLEMENT.COMPLEMENT_ID%TYPE) AS
     BEGIN
-        DELETE FROM COMPLEMENT WHERE COMPLEMENT_ID = complement_id;
+        DELETE FROM COMPLEMENT WHERE COMPLEMENT_ID = v_complement_id;
     END delete_complement;
 
 END complement_package;
